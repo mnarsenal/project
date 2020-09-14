@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoroyCollectionViewCell" id="gTV-IL-0wX" customClass="CategoroyCollectionViewCell" customModule="Find_seat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="58" height="54"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA5-dV-hjL">
+                        <rect key="frame" x="0.0" y="0.0" width="58" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="OB4-ej-OuV"/>
+                            <constraint firstAttribute="width" constant="58" id="acE-Ir-ZZz"/>
+                        </constraints>
+                        <connections>
+                            <action selector="BtnMoves:" destination="gTV-IL-0wX" eventType="touchUpInside" id="div-ff-OVN"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 289" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-bb-gvR">
+                        <rect key="frame" x="12" y="0.0" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="IWt-hS-gRi"/>
+                            <constraint firstAttribute="height" constant="34" id="q0v-ej-Tmz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmj-VQ-cUR">
+                        <rect key="frame" x="9" y="39" width="40" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CA5-dV-hjL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7WE-EL-Ub0"/>
+                <constraint firstItem="tmj-VQ-cUR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="I7D-ja-Od6"/>
+                <constraint firstItem="CA5-dV-hjL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Sab-gb-LYt"/>
+                <constraint firstAttribute="bottom" secondItem="CA5-dV-hjL" secondAttribute="bottom" id="TD8-xR-pkk"/>
+                <constraint firstAttribute="trailing" secondItem="CA5-dV-hjL" secondAttribute="trailing" id="dUQ-tb-bpi"/>
+                <constraint firstItem="g9x-bb-gvR" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="laG-Wo-wvV"/>
+                <constraint firstAttribute="bottom" secondItem="tmj-VQ-cUR" secondAttribute="bottom" id="nCp-Zb-ulj"/>
+                <constraint firstItem="g9x-bb-gvR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v25-Ir-vpg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="58" height="54"/>
+            <connections>
+                <outlet property="image" destination="g9x-bb-gvR" id="xLh-3Z-GeU"/>
+                <outlet property="name" destination="tmj-VQ-cUR" id="F1c-11-YCA"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 289" width="34" height="34"/>
+    </resources>
+</document>
